@@ -22,6 +22,6 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v2
       - name: Build, tag, and push image to Amazon ECR
         run: |
-          docker build -t react-docker:latest .
-          docker tag react-docker:latest 318770414672.dkr.ecr.ap-southeast-1.amazonaws.com/react-docker:latest
-          docker push 318770414672.dkr.ecr.ap-southeast-1.amazonaws.com/react-docker:latest
+          docker build -t react-cicd:latest .
+          docker tag react-cicd:latest 318770414672.dkr.ecr.ap-southeast-1.amazonaws.com/react-cicd:latest
+          docker push 318770414672.dkr.ecr.ap-southeast-1.amazonaws.com/react-cicd:latest
